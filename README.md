@@ -1,2 +1,9 @@
 # CMS320-Fall2025
-Group Project
+Group Name:
+Game Name:
+
+Team Member Name: Caitlyn
+Roles:
+
+Team Member Name: Isabella
+Roles:

@@ -10,6 +10,6 @@ public class MainMenuController : MonoBehaviour
 
     public void OnPlayButtonClicked()
     {
-        Debug.Log("Play button clicked - Scene not implemented yet.");
+        SceneManager.LoadScene("Level1");
     }
 }

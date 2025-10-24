@@ -5,8 +5,7 @@ public class MainMenuController : MonoBehaviour
 {
     public void OnRulesButtonClicked()
     {
-        //For now, just log a message
-        Debug.Log("Rules button clicked - Scene not implemented yet.");
+        SceneManager.LoadScene("RulesPage");
     }
 
     public void OnPlayButtonClicked()

@@ -6,10 +6,12 @@ public class ScarecrowController : MonoBehaviour
     private Animator animator;
     private Vector2 movement;
     private Vector2 lastMove;
+    private Rigidbody2D rb;
 
     void Start()
     {
         animator = GetComponent<Animator>();
+        rb = GetComponent<Rigidbody2D>();
     }
 
     void Update()
@@ -37,10 +39,10 @@ public class ScarecrowController : MonoBehaviour
         {
             animator.SetTrigger("Jump");
         }
-
-        //Move character
-        transform.position += new Vector3(movement.x, movement.y, 0) * moveSpeed * Time.deltaTime;
-
-        Debug.Log($"MoveX: {movement.x}, MoveY: {movement.y}, IsMoving: {animator.GetBool("IsMoving")}");
+    }
+    void FixedUpdate()
+    {
+        //Move character using Rigidbody2D for proper collision
+        rb.MovePosition(rb.position + movement * moveSpeed * Time.fixedDeltaTime);
     }
 }

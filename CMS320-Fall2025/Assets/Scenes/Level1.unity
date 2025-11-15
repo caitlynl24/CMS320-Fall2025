@@ -7673,8 +7673,9 @@ GameObject:
   - component: {fileID: 1250039732}
   - component: {fileID: 1250039731}
   - component: {fileID: 1250039730}
+  - component: {fileID: 1250039733}
   m_Layer: 0
-  m_Name: Closed Door Sprite_0
+  m_Name: Door
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7799,6 +7800,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -90}
+--- !u!114 &1250039733
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1250039729}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7dc5d4eed0837a943aec46f7157abcbc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DoorController
+  closedSprite: {fileID: 1791202842300034381, guid: b3ba5cde1f4eac64ab8746f11a55f0ec, type: 3}
+  openSprite: {fileID: -3376042530285203294, guid: ee2c0c1487562a749bf2f71716f4ba66, type: 3}
 --- !u!1001 &1258831859
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9144,7 +9159,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CandyManager
   candyCount: 0
+  totalCandy: 0
   candyText: {fileID: 334682613}
+  door: {fileID: 1250039733}
 --- !u!1001 &1532726740
 PrefabInstance:
   m_ObjectHideFlags: 0

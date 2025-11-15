@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 9175673923888769075}
   - component: {fileID: 3685611438366432636}
   - component: {fileID: 4051429669638439701}
+  - component: {fileID: 8866894512677835532}
   m_Layer: 0
   m_Name: CandyCorn
   m_TagString: Untagged
@@ -137,3 +138,15 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 7.63, y: 8.75}
   m_EdgeRadius: 0
+--- !u!114 &8866894512677835532
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 293845847338170603}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d32e8eb1db668cd429f6c0f32750f40d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CandyCorn

@@ -10,11 +10,15 @@ public class ScarecrowController : MonoBehaviour
     private Rigidbody2D rb;
     private bool isJumping = false;
     private float jumpDuration = 0.4f;
+    private SpriteRenderer sr;
+    private int normalSortingOrder;
 
     void Start()
     {
         animator = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
+        sr = GetComponent<SpriteRenderer>();
+        normalSortingOrder = sr.sortingOrder;
     }
 
     void Update()
@@ -58,12 +62,18 @@ public class ScarecrowController : MonoBehaviour
 
         rb.position += Vector2.up * 0.2f; //Lifts the player visually
 
+        //Bring scarecrow in front of haybales
+        sr.sortingOrder = normalSortingOrder + 10;
+
         //Wait for jump animation duration
         yield return new WaitForSeconds(jumpDuration);
 
         //Restore collisions
         Physics2D.IgnoreLayerCollision(playerLayer, haybaleLayer, false);
         rb.position = new Vector2(rb.position.x, originalOffset);
+
+        //Restore normal draw order
+        sr.sortingOrder = normalSortingOrder;
         
         isJumping = false;
     }

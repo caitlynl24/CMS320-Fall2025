@@ -1,4 +1,5 @@
 using UnityEngine;
+using System.Collections;
 
 public class ScarecrowController : MonoBehaviour
 {
@@ -7,6 +8,8 @@ public class ScarecrowController : MonoBehaviour
     private Vector2 movement;
     private Vector2 lastMove;
     private Rigidbody2D rb;
+    private bool isJumping = false;
+    private float jumpDuration = 0.4f;
 
     void Start()
     {
@@ -35,11 +38,36 @@ public class ScarecrowController : MonoBehaviour
         animator.SetBool("IsMoving", movement.magnitude > 0);
 
         //Jump
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.Space) && !isJumping)
         {
             animator.SetTrigger("Jump");
+            StartCoroutine(JumpRoutine());
         }
     }
+
+    private IEnumerator JumpRoutine()
+    {
+        isJumping = true;
+
+        //Ignore collisions between Player layer (your character) and Haybale layer
+        int playerLayer = LayerMask.NameToLayer("Player");
+        int haybaleLayer = LayerMask.NameToLayer("Haybale");
+        Physics2D.IgnoreLayerCollision(playerLayer, haybaleLayer, true);
+
+        float originalOffset = rb.position.y;
+
+        rb.position += Vector2.up * 0.2f; //Lifts the player visually
+
+        //Wait for jump animation duration
+        yield return new WaitForSeconds(jumpDuration);
+
+        //Restore collisions
+        Physics2D.IgnoreLayerCollision(playerLayer, haybaleLayer, false);
+        rb.position = new Vector2(rb.position.x, originalOffset);
+        
+        isJumping = false;
+    }
+
     void FixedUpdate()
     {
         //Move character using Rigidbody2D for proper collision

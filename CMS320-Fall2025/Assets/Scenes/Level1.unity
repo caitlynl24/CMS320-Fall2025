@@ -808,7 +808,7 @@ GameObject:
   - component: {fileID: 81251812}
   - component: {fileID: 81251814}
   - component: {fileID: 81251813}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Scarecrow
   m_TagString: Player
   m_Icon: {fileID: 0}

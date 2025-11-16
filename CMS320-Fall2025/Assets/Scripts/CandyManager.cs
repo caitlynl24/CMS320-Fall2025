@@ -1,5 +1,6 @@
 using UnityEngine;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class CandyManager : MonoBehaviour
 {
@@ -18,7 +19,7 @@ public class CandyManager : MonoBehaviour
 
     void Start()
     {
-        totalCandy = FindObjectsOfType<CandyCorn>().Length;
+        totalCandy = FindObjectsByType<CandyCorn>(FindObjectsSortMode.None).Length;
         UpdateUI();
     }
 

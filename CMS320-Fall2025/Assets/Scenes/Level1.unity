@@ -938,6 +938,7 @@ GameObject:
   - component: {fileID: 81251812}
   - component: {fileID: 81251814}
   - component: {fileID: 81251813}
+  - component: {fileID: 81251815}
   m_Layer: 7
   m_Name: Scarecrow
   m_TagString: Player
@@ -1126,6 +1127,18 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 0.56, y: 1.56}
   m_EdgeRadius: 0
+--- !u!114 &81251815
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 81251808}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 577f856de04a1564e808b8abcb95a266, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::YSort
 --- !u!1001 &93370368
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3052,6 +3065,23 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a6e696b4930c9354da52339fb2a5ee8a, type: 3}
+--- !u!1 &377949487 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 293845847338170603, guid: 30a74c121dda2754bb43ad2c4b25a38d, type: 3}
+  m_PrefabInstance: {fileID: 1238380406}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &377949492
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 377949487}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 577f856de04a1564e808b8abcb95a266, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::YSort
 --- !u!1001 &381984660
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8730,6 +8760,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: CandyCorn (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 293845847338170603, guid: 30a74c121dda2754bb43ad2c4b25a38d, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 9175673923888769075, guid: 30a74c121dda2754bb43ad2c4b25a38d, type: 3}
       propertyPath: m_LocalPosition.x
       value: 1.2254723
@@ -8773,7 +8807,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 293845847338170603, guid: 30a74c121dda2754bb43ad2c4b25a38d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1363193093}
   m_SourcePrefab: {fileID: 100100000, guid: 30a74c121dda2754bb43ad2c4b25a38d, type: 3}
 --- !u!1001 &1190144188
 PrefabInstance:
@@ -9242,6 +9279,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: CandyCorn
       objectReference: {fileID: 0}
+    - target: {fileID: 293845847338170603, guid: 30a74c121dda2754bb43ad2c4b25a38d, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 9175673923888769075, guid: 30a74c121dda2754bb43ad2c4b25a38d, type: 3}
       propertyPath: m_LocalPosition.x
       value: -10.09
@@ -9285,7 +9326,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 293845847338170603, guid: 30a74c121dda2754bb43ad2c4b25a38d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 377949492}
   m_SourcePrefab: {fileID: 100100000, guid: 30a74c121dda2754bb43ad2c4b25a38d, type: 3}
 --- !u!1001 &1243714958
 PrefabInstance:
@@ -10006,6 +10050,23 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a6e696b4930c9354da52339fb2a5ee8a, type: 3}
+--- !u!1 &1333892099 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 293845847338170603, guid: 30a74c121dda2754bb43ad2c4b25a38d, type: 3}
+  m_PrefabInstance: {fileID: 1939102511}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1333892104
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1333892099}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 577f856de04a1564e808b8abcb95a266, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::YSort
 --- !u!1001 &1337107272
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10266,6 +10327,23 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a6e696b4930c9354da52339fb2a5ee8a, type: 3}
+--- !u!1 &1363193088 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 293845847338170603, guid: 30a74c121dda2754bb43ad2c4b25a38d, type: 3}
+  m_PrefabInstance: {fileID: 1187516704}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1363193093
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1363193088}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 577f856de04a1564e808b8abcb95a266, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::YSort
 --- !u!1001 &1375981720
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13028,6 +13106,23 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a6e696b4930c9354da52339fb2a5ee8a, type: 3}
+--- !u!1 &1692591316 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 293845847338170603, guid: 30a74c121dda2754bb43ad2c4b25a38d, type: 3}
+  m_PrefabInstance: {fileID: 1928931299}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1692591321
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1692591316}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 577f856de04a1564e808b8abcb95a266, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::YSort
 --- !u!1001 &1699915240
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13873,6 +13968,23 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a6e696b4930c9354da52339fb2a5ee8a, type: 3}
+--- !u!1 &1838502589 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 293845847338170603, guid: 30a74c121dda2754bb43ad2c4b25a38d, type: 3}
+  m_PrefabInstance: {fileID: 2107523390}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1838502594
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1838502589}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 577f856de04a1564e808b8abcb95a266, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::YSort
 --- !u!1001 &1841256312
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15055,6 +15167,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: CandyCorn (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 293845847338170603, guid: 30a74c121dda2754bb43ad2c4b25a38d, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 9175673923888769075, guid: 30a74c121dda2754bb43ad2c4b25a38d, type: 3}
       propertyPath: m_LocalPosition.x
       value: 10.559921
@@ -15098,7 +15214,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 293845847338170603, guid: 30a74c121dda2754bb43ad2c4b25a38d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1692591321}
   m_SourcePrefab: {fileID: 100100000, guid: 30a74c121dda2754bb43ad2c4b25a38d, type: 3}
 --- !u!1001 &1939102511
 PrefabInstance:
@@ -15111,6 +15230,10 @@ PrefabInstance:
     - target: {fileID: 293845847338170603, guid: 30a74c121dda2754bb43ad2c4b25a38d, type: 3}
       propertyPath: m_Name
       value: CandyCorn (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 293845847338170603, guid: 30a74c121dda2754bb43ad2c4b25a38d, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 9175673923888769075, guid: 30a74c121dda2754bb43ad2c4b25a38d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -15155,7 +15278,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 293845847338170603, guid: 30a74c121dda2754bb43ad2c4b25a38d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1333892104}
   m_SourcePrefab: {fileID: 100100000, guid: 30a74c121dda2754bb43ad2c4b25a38d, type: 3}
 --- !u!1001 &1942887302
 PrefabInstance:
@@ -16209,6 +16335,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: CandyCorn (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 293845847338170603, guid: 30a74c121dda2754bb43ad2c4b25a38d, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 9175673923888769075, guid: 30a74c121dda2754bb43ad2c4b25a38d, type: 3}
       propertyPath: m_LocalPosition.x
       value: 2.424871
@@ -16252,7 +16382,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 293845847338170603, guid: 30a74c121dda2754bb43ad2c4b25a38d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1838502594}
   m_SourcePrefab: {fileID: 100100000, guid: 30a74c121dda2754bb43ad2c4b25a38d, type: 3}
 --- !u!1001 &2117610510
 PrefabInstance:

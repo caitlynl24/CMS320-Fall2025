@@ -3,10 +3,16 @@ using UnityEngine;
 public class CandyCorn : MonoBehaviour
 {
     private bool playerIsNear = false;
+    public AudioClip pickupSound;       
+    private AudioSource audioSource;     
+
+    void Start()
+    {
+        audioSource = GetComponent<AudioSource>(); // link AudioSource
+    }
 
     void Update()
     {
-        //Player must be nearby AND press C
         if (playerIsNear && Input.GetKeyDown(KeyCode.C))
         {
             CollectCandy();
@@ -31,10 +37,13 @@ public class CandyCorn : MonoBehaviour
 
     void CollectCandy()
     {
-        //Add to score
+        // play sound
+        audioSource.PlayOneShot(pickupSound);
+
+        // add to score
         CandyManager.Instance.AddCandy();
 
-        //Remove candy from scene
-        Destroy(gameObject);
+        // destroy candy AFTER sound finishes
+        Destroy(gameObject, pickupSound.length);
     }
 }

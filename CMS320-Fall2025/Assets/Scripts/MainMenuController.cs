@@ -10,6 +10,6 @@ public class MainMenuController : MonoBehaviour
 
     public void OnPlayButtonClicked()
     {
-        SceneManager.LoadScene("Level1");
+        SceneManager.LoadScene("Tutorial"); //should we add seperate tutorial and level 1 buttons?
     }
 }

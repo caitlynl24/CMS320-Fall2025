@@ -3344,11 +3344,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2615436e5c4ac461f961dd37d2a88b8e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
-  timeRemaining: 110
+  timeRemaining: 60
   isCounting: 1
   timerText: {fileID: 793865451}
   gameOverPanel: {fileID: 1343458245}
-  lowTimeThreshold: 30
+  lowTimeThreshold: 15
   normalColor: {r: 0, g: 0, b: 0, a: 1}
   warningColor: {r: 1, g: 0, b: 0, a: 1}
 --- !u!4 &381162580

@@ -12,6 +12,6 @@ public class GameOverButtons : MonoBehaviour
     public void GoHome()
     {
         Time.timeScale = 1f; // reset time
-        SceneManager.LoadScene("HomePage"); // Replace with your home scene name
+        SceneManager.LoadScene("HomePage"); 
     }
 }
